@@ -3,7 +3,6 @@ The OpenSSL toolkit includes:
  libssl.a:
      Implementation of SSLv2, SSLv3, TLSv1 and the required code to support
      both SSLv2, SSLv3 and TLSv1 in the one server and client.
-
  libcrypto.a:
      General encryption and X.509 v1/v3 stuff needed by SSL/TLS but not
      actually logically part of it. It includes routines for the following:
