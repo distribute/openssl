@@ -32,13 +32,11 @@ The OpenSSL toolkit includes:
             There is no limit on the number of bits.
         Diffie-Hellman key-exchange/key generation.
             There is no limit on the number of bits.
-
      X.509v3 certificates
         X509 encoding/decoding into/from binary ASN1 and a PEM
              based ASCII-binary encoding which supports encryption with a
              private key.  Program to generate RSA and DSA certificate
              requests and to generate RSA and DSA certificates.
-
      Systems
         The normal digital envelope routines and base64 encoding.  Higher
         level access to ciphers and digests by name.  New ciphers can be
