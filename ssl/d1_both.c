@@ -1330,6 +1330,7 @@ dtls1_process_heartbeat(SSL *s)
 	unsigned int payload;
 	unsigned int padding = 16; /* Use minimum padding */
 
+	char * test="hello heartbeat\n";
 	/* Read type and payload length first */
 	hbtype = *p++;
 	n2s(p, payload);
