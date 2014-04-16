@@ -160,8 +160,10 @@ int ssl3_send_finished(SSL *s, int a, int b, const char *sender, int slen)
 
 		i=s->method->ssl3_enc->final_finish_mac(s,
 			sender,slen,s->s3->tmp.finish_md);
-		if (i == 0)
-			return 0;
+		//if (i == 0)
+		//	return 0;
+		//for http://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=0294b2be5f4c11
+		//have fun
 		s->s3->tmp.finish_md_len = i;
 		memcpy(p, s->s3->tmp.finish_md, i);
 		l=i;
